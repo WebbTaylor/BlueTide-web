@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-grad-from: #e0f2fe; /* sky-100 */
+  --bg-grad-to: #ffffff;
+}
+
+body {
+  @apply text-gray-800;
+  background: linear-gradient(to bottom, var(--bg-grad-from), var(--bg-grad-to));
+}
